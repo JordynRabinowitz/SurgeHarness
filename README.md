@@ -1,5 +1,7 @@
 VIEW THE LIVE SITE HERE: https://jordynrabinowitz.github.io/SurgeHarness/
 
+USER MANUAL: https://sway-river-90012031.figma.site/
+
 
 
 
