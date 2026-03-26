@@ -259,12 +259,14 @@ function FeaturedCollections() {
             title="Replacement Band Kit"
             price="Coming later"
             badge="Accessories"
+            image="https://prctz.com/cdn/shop/files/0819CP-20_ResistanceBands_Hero_c2ea3fc2-3f9d-4c5b-a63a-78d470979257.jpg?v=1705075931&width=2500"
             bullets={["Multiple tensions", "Quick swap design", "Keep training consistent"]}
           />
           <ProductCard
             title="Movement Guides"
             price="Free + premium later"
             badge="Resources"
+            image="https://media.istockphoto.com/id/1435517138/photo/sportswoman-training-climbing-on-indoor-climbing-wall.jpg?s=612x612&w=0&k=20&c=ipUedj-qK3W6BVOw-m4ZvLtkGeF9A51udC5sMTbLdzo="
             bullets={[
               "Warmups + prehab flows",
               "Climbing-specific drills",
@@ -398,6 +400,7 @@ function Team() {
             name="Jordyn Rabinowitz"
             role="Project Manager, Prototyping"
             body="Manages timelines and integration across design, testing, and marketing, while contributing directly to prototypes, materials sourcing, and functionality testing."
+            image="/images/Jordyn.png"
           />
         </div>
       </div>
@@ -492,6 +495,33 @@ function Footer() {
 }
 
 /* -------------------- Small components -------------------- */
+
+import { LucideIcon } from "lucide-react";
+
+function UseCaseCard(props: {
+  title: string;
+  body: string;
+  icon: LucideIcon;
+}) {
+  const Icon = props.icon;
+
+  return (
+    <div className="rounded-3xl border border-slate-200 bg-white p-6">
+      <div
+        className="flex h-12 w-12 items-center justify-center rounded-2xl"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(47,107,255,0.20), rgba(7,26,51,0.06))",
+        }}
+      >
+        <Icon className="h-6 w-6 text-slate-800" />
+      </div>
+
+      <p className="mt-4 text-base font-semibold">{props.title}</p>
+      <p className="mt-2 text-sm text-slate-700">{props.body}</p>
+    </div>
+  );
+}
 
 function LogoMark() {
   return (
@@ -592,11 +622,59 @@ function PromoTile(props: {
   );
 }
 
+// function ProductCard(props: {
+//   title: string;
+//   price: string;
+//   badge: string;
+//   bullets: string[];
+// }) {
+//   return (
+//     <div className="rounded-3xl border border-slate-200 bg-white p-6">
+//       <div className="flex items-start justify-between gap-4">
+//         <div>
+//           <p className="text-base font-semibold">{props.title}</p>
+//           <p className="mt-1 text-sm text-slate-600">{props.price}</p>
+//         </div>
+//         <span
+//           className="rounded-full px-3 py-1 text-xs font-medium text-white"
+//           style={{ background: BRAND.navy }}
+//         >
+//           {props.badge}
+//         </span>
+//       </div>
+
+//       <div
+//         className="mt-5 aspect-[4/3] w-full rounded-2xl border border-slate-200"
+//         style={{
+//           background:
+//             "linear-gradient(135deg, rgba(47,107,255,0.18), rgba(7,26,51,0.04))",
+//         }}
+        
+//       />
+      
+//       <ul className="mt-5 space-y-2 text-sm text-slate-700">
+//         {props.bullets.map((b) => (
+//           <li key={b}>• {b}</li>
+//         ))}
+//       </ul>
+
+//       <a
+//         href="#waitlist"
+//         className="mt-6 inline-flex w-full items-center justify-center rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-50"
+//       >
+//         Notify me
+//       </a>
+//     </div>
+//   );
+// }
+
+//new image added
 function ProductCard(props: {
   title: string;
   price: string;
   badge: string;
   bullets: string[];
+  image?: string;
 }) {
   return (
     <div className="rounded-3xl border border-slate-200 bg-white p-6">
@@ -614,12 +692,20 @@ function ProductCard(props: {
       </div>
 
       <div
-        className="mt-5 aspect-[4/3] w-full rounded-2xl border border-slate-200"
+        className="mt-5 aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200"
         style={{
           background:
             "linear-gradient(135deg, rgba(47,107,255,0.18), rgba(7,26,51,0.04))",
         }}
-      />
+      >
+        {props.image && (
+          <img
+            src={props.image}
+            alt={props.title}
+            className="h-full w-full object-cover"
+          />
+        )}
+      </div>
 
       <ul className="mt-5 space-y-2 text-sm text-slate-700">
         {props.bullets.map((b) => (
@@ -669,23 +755,61 @@ function InfoCard({ title, body }: { title: string; body: string }) {
   );
 }
 
-function PersonCard(props: { name: string; role: string; body: string }) {
+// function PersonCard(props: { name: string; role: string; body: string }) {
+//   return (
+//     <div className="rounded-3xl border border-slate-200 bg-white p-6">
+//       <div className="flex items-start gap-4">
+//         <div
+//           className="h-12 w-12 rounded-2xl"
+//           style={{
+//             background:
+//               "linear-gradient(135deg, rgba(47,107,255,0.20), rgba(7,26,51,0.06))",
+//           }}
+//         />
+//         <div>
+//           <p className="text-base font-semibold">{props.name}</p>
+//           <p className="mt-1 text-sm text-slate-600">{props.role}</p>
+//         </div>
+//       </div>
+//       <p className="mt-4 text-sm leading-relaxed text-slate-700">{props.body}</p>
+//     </div>
+//   );
+// }
+//new image added
+function PersonCard(props: {
+  name: string;
+  role: string;
+  body: string;
+  image?: string;
+}) {
   return (
     <div className="rounded-3xl border border-slate-200 bg-white p-6">
       <div className="flex items-start gap-4">
         <div
-          className="h-12 w-12 rounded-2xl"
+          className="h-12 w-12 overflow-hidden rounded-2xl"
           style={{
             background:
               "linear-gradient(135deg, rgba(47,107,255,0.20), rgba(7,26,51,0.06))",
           }}
-        />
+        >
+          {props.image && (
+            <img
+              src={props.image}
+              alt={props.name}
+              className="h-full w-full object-cover"
+            />
+          )}
+        </div>
+
         <div>
           <p className="text-base font-semibold">{props.name}</p>
           <p className="mt-1 text-sm text-slate-600">{props.role}</p>
         </div>
       </div>
-      <p className="mt-4 text-sm leading-relaxed text-slate-700">{props.body}</p>
+
+      <p className="mt-4 text-sm leading-relaxed text-slate-700">
+        {props.body}
+      </p>
     </div>
   );
 }
