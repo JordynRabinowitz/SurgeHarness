@@ -30,7 +30,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "npm"
+          cache: npm
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -40,7 +41,7 @@ jobs:
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
-      - name: Disable Jekyll (keeps _next from being stripped)
+      - name: Disable Jekyll
         run: touch out/.nojekyll
 
       - name: Upload artifact
