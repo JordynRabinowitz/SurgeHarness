@@ -8,14 +8,9 @@
 
 import type { NextConfig } from "next";
 
-const basePath = process.env.PAGES_BASE_PATH || "";
-
 const nextConfig: NextConfig = {
   output: "export",
-  basePath,
-
-  // Optional but often helpful on static hosts:
-  trailingSlash: true,
+  basePath: process.env.PAGES_BASE_PATH,
 };
 
 export default nextConfig;
