@@ -8,6 +8,8 @@ const BRAND = {
   ice: "#EAF1FF",
 };
 
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/SurgeHarness" : "";
+
 export default function Page() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -763,7 +765,7 @@ function ProductCard(props: {
       >
         {props.image && (
           <img
-            src={props.image}
+            src={`${BASE_PATH}${props.image}`}
             alt={props.title}
             className="h-full w-full object-cover"
           />
@@ -857,7 +859,7 @@ function PersonCard(props: {
         >
           {props.image && (
             <img
-              src={props.image}
+              src={`${BASE_PATH}${props.image}`}
               alt={props.name}
               className="h-full w-full object-cover"
             />
