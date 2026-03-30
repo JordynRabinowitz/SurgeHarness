@@ -281,34 +281,93 @@ function FeaturedCollections() {
   );
 }
 
+//update use cases to add icons
+
+// function CategoryRow() {
+//   const cats = [
+//     { label: "Climbing", note: "technique under resistance" },
+//     { label: "Rehabilitation", note: "controlled rebuilding" },
+//     { label: "Posture + Core", note: "active engagement" },
+//     { label: "Training", note: "warmups + prehab" },
+//   ];
+
+//   return (
+//     <section id="use-cases" className="bg-slate-50 border-t border-slate-200">
+//       <div className="mx-auto max-w-6xl px-4 py-12">
+//         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+//           {cats.map((c) => (
+//             <div
+//               key={c.label}
+//               className="rounded-3xl border border-slate-200 bg-white p-5"
+//             >
+//               <div
+//                 className="mb-3 h-10 w-10 rounded-2xl"
+//                 style={{
+//                   background:
+//                     "linear-gradient(135deg, rgba(47,107,255,0.20), rgba(7,26,51,0.06))",
+//                 }}
+//               />
+//               <p className="text-sm font-semibold">{c.label}</p>
+//               <p className="mt-1 text-xs text-slate-600">{c.note}</p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 function CategoryRow() {
   const cats = [
-    { label: "Climbing", note: "technique under resistance" },
-    { label: "Rehabilitation", note: "controlled rebuilding" },
-    { label: "Posture + Core", note: "active engagement" },
-    { label: "Training", note: "warmups + prehab" },
+    {
+      label: "Climbing",
+      note: "technique under resistance",
+      icon: Mountain,
+    },
+    {
+      label: "Rehabilitation",
+      note: "controlled rebuilding",
+      icon: HeartPulse,
+    },
+    {
+      label: "Posture + Core",
+      note: "active engagement",
+      icon: Shield,
+    },
+    {
+      label: "Training",
+      note: "warmups + prehab",
+      icon: Dumbbell,
+    },
   ];
 
   return (
     <section id="use-cases" className="bg-slate-50 border-t border-slate-200">
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {cats.map((c) => (
-            <div
-              key={c.label}
-              className="rounded-3xl border border-slate-200 bg-white p-5"
-            >
+          {cats.map((c) => {
+            const Icon = c.icon;
+
+            return (
               <div
-                className="mb-3 h-10 w-10 rounded-2xl"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(47,107,255,0.20), rgba(7,26,51,0.06))",
-                }}
-              />
-              <p className="text-sm font-semibold">{c.label}</p>
-              <p className="mt-1 text-xs text-slate-600">{c.note}</p>
-            </div>
-          ))}
+                key={c.label}
+                className="rounded-3xl border border-slate-200 bg-white p-5"
+              >
+                <div
+                  className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, rgba(47,107,255,0.20), rgba(7,26,51,0.06))",
+                  }}
+                >
+                  <Icon className="h-5 w-5 text-slate-800" />
+                </div>
+
+                <p className="text-sm font-semibold">{c.label}</p>
+                <p className="mt-1 text-xs text-slate-600">{c.note}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -423,10 +482,10 @@ function Waitlist() {
                 Early access to the first drop, plus updates on testing and release timing.
               </p>
             </div>
-            <div className="text-sm text-slate-600">
+            {/* <div className="text-sm text-slate-600">
               Brand: <span className="font-medium">dark blue</span> +{" "}
               <span className="font-medium">electric accent</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Frontend-only form (wire to your email service later) */}
@@ -499,7 +558,8 @@ function Footer() {
 
 /* -------------------- Small components -------------------- */
 
-import { LucideIcon } from "lucide-react";
+import { LucideIcon, Shield } from "lucide-react";
+import { Mountain, HeartPulse, Dumbbell, Activity } from "lucide-react";
 
 function UseCaseCard(props: {
   title: string;
