@@ -394,13 +394,14 @@ function Team() {
           <PersonCard
             name="Arva Syed"
             role="User Testing Lead, Medical Research, Prototyping"
+            image="/public/images/Arva1.png"
             body="Leads user testing and rehab safety research, ensuring Surge aligns with physiotherapy-informed movement analysis and iterative improvements."
           />
           <PersonCard
             name="Jordyn Rabinowitz"
             role="Project Manager, Prototyping"
             body="Manages timelines and integration across design, testing, and marketing, while contributing directly to prototypes, materials sourcing, and functionality testing."
-            image="/images/Jordyn.png"
+            image="/public/images/Jordyn1.png"
           />
         </div>
       </div>
