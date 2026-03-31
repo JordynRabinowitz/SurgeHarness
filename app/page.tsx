@@ -263,7 +263,7 @@ function FeaturedCollections() {
             title="Replacement Band Kit"
             price="Coming later"
             badge="Accessories"
-            image="/images/ResistanceBands.jpg"
+            image="/images/Bands.jpg"
             bullets={["Multiple tensions", "Quick swap design", "Keep training consistent"]}
           />
           <ProductCard
