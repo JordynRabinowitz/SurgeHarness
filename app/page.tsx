@@ -263,14 +263,14 @@ function FeaturedCollections() {
             title="Replacement Band Kit"
             price="Coming later"
             badge="Accessories"
-            image="https://prctz.com/cdn/shop/files/0819CP-20_ResistanceBands_Hero_c2ea3fc2-3f9d-4c5b-a63a-78d470979257.jpg?v=1705075931&width=2500"
+            image="/images/ResistanceBands.jpg"
             bullets={["Multiple tensions", "Quick swap design", "Keep training consistent"]}
           />
           <ProductCard
             title="Movement Guides"
             price="Free + premium later"
             badge="Resources"
-            image="https://media.istockphoto.com/id/1435517138/photo/sportswoman-training-climbing-on-indoor-climbing-wall.jpg?s=612x612&w=0&k=20&c=ipUedj-qK3W6BVOw-m4ZvLtkGeF9A51udC5sMTbLdzo="
+            image="/images/MovementGuide.jpg"
             bullets={[
               "Warmups + prehab flows",
               "Climbing-specific drills",
