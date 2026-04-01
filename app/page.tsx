@@ -251,7 +251,7 @@ function FeaturedCollections() {
             title="Surge Harness"
             price="Coming soon"
             badge="Core system"
-            image="/images/man1.jpg"
+            image="/images/SurgeFrontBackEdit.jpg"
             // image="/images/SurgeHarnessNOTREALEDIT.jpg"
             bullets={[
               "Torso-to-arm resistance routing",
