@@ -10,6 +10,8 @@ const BRAND = {
 
 const BASE_PATH = process.env.NODE_ENV === "production" ? "/SurgeHarness" : "";
 
+import Image from "next/image";
+
 export default function Page() {
   return (
     <main className="min-h-screen bg-white text-slate-950">
@@ -159,8 +161,8 @@ function Hero() {
             Not medical advice. If you’re recovering from injury, consult a professional before use.
           </p>
         </div>
-
-        <div className="flex items-center justify-center">
+              {/* new image added */}
+        {/* <div className="flex items-center justify-center">
           <div className="w-full max-w-md rounded-3xl border border-white/15 bg-white/10 p-6 shadow-sm backdrop-blur">
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -198,7 +200,58 @@ function Hero() {
               Join waitlist
             </a>
           </div>
+        </div> */}
+      <div className="flex items-center justify-center">
+        <div className="w-full max-w-lg space-y-4">
+          <Image
+            src="/images/SurgeTorsoEdit2.0.jpg"
+            alt="Surge Harness shown from front, back, and side views"
+            width={1600}
+            height={900}
+            priority
+            unoptimized
+            className="h-auto w-full rounded-3xl border border-white/15 shadow-2xl"
+          />
+
+          <div className="w-full rounded-3xl border border-white/15 bg-white/10 p-6 shadow-sm backdrop-blur">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold text-white">Surge Harness</p>
+                <p className="mt-1 text-sm text-white/75">
+                  Wearable resistance routing for arms + overhead motion
+                </p>
+              </div>
+              <span className="rounded-full bg-white/15 px-3 py-1 text-xs text-white/85 ring-1 ring-white/15">
+                prototype phase
+              </span>
+            </div>
+
+            <div className="mt-5 rounded-2xl border border-white/15 bg-white/10 p-4">
+              <p className="text-xs text-white/70">What it does</p>
+              <ul className="mt-2 space-y-1 text-sm text-white/90">
+                <li>• Adds resistance without adding load</li>
+                <li>• Slows motion to improve control + technique</li>
+                <li>• Modular tension for training or rehab</li>
+              </ul>
+            </div>
+
+            {/* <div className="mt-4 grid grid-cols-2 gap-3">
+              <MiniCard title="Climbing" desc="Technique under resistance" />
+              <MiniCard title="Rehab" desc="Controlled rebuilding" />
+              <MiniCard title="Posture" desc="Active engagement" />
+              <MiniCard title="Athletes" desc="Warmups + prehab" />
+            </div> */}
+
+            {/* <a
+              href="#waitlist"
+              className="mt-6 block w-full rounded-xl px-5 py-3 text-center text-sm font-medium text-white"
+              style={{ background: BRAND.navy }}
+            >
+              Join waitlist
+            </a> */}
+          </div>
         </div>
+      </div>
       </div>
     </section>
   );
