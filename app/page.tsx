@@ -204,7 +204,8 @@ function Hero() {
       <div className="flex items-center justify-center">
         <div className="w-full max-w-lg space-y-4">
           <Image
-            src="/images/SurgeTorsoEdit2.0.jpg"
+            // src="/images/SurgeTorsoEdit2.0.jpg"
+            src={`${BASE_PATH}${"/images/SurgeTorsoEdit2.0.jpg"}`}
             alt="Surge Harness shown from front, back, and side views"
             width={1600}
             height={900}
