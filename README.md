@@ -52,7 +52,7 @@ Useful for prehab, movement prep, and intentional low-load strength work.
 
 ## Media
 
-Add your project visuals here. GitHub renders images well when they are stored in the repo and linked with relative paths.
+
 
 <!-- ```md
 ![Surge Harness prototype](public/images/your-prototype-image.png)
