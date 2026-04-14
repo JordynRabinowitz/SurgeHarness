@@ -1,4 +1,4 @@
-# Surge Harness <img width="1007" height="1820" alt="SurgeLogo" src="https://github.com/user-attachments/assets/35d51eca-4246-4d4a-9264-5af6cb2697ab"/>
+# Surge Harness <img width="10.07" height="18.20" alt="SurgeLogo" src="https://github.com/user-attachments/assets/35d51eca-4246-4d4a-9264-5af6cb2697ab"/>
 
 
 
