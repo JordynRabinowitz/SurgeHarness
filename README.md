@@ -1,4 +1,4 @@
-# Surge Harness ![SurgeLogo](https://github.com/user-attachments/assets/05558e24-5f4c-40e4-b7d7-15af784881d1)
+# Surge Harness ![SurgeLogo](<img width="100" height="180" alt="SurgeLogo" src="https://github.com/user-attachments/assets/fd5968d2-a983-4a9f-824a-1c8e0c4d5461" />)
 
 
 **Strength you can feel. Control you can build.**
