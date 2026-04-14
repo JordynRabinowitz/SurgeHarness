@@ -1,4 +1,4 @@
-# <img width="20" height="35" alt="WhiteSurgeLogo" src="https://github.com/user-attachments/assets/19f2a12f-c252-4f13-a9c3-80dec19f5706"/>urge Harness
+# <img width="20" height="40" alt="WhiteSurgeLogo" src="https://github.com/user-attachments/assets/19f2a12f-c252-4f13-a9c3-80dec19f5706"/>urge Harness
 
 
 
