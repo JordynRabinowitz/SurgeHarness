@@ -525,7 +525,7 @@ function Team() {
     </section>
   );
 }
-
+//New Waitlist Function
 function Waitlist() {
   return (
     <section id="waitlist" className="border-t border-slate-200 bg-white">
@@ -538,29 +538,17 @@ function Waitlist() {
                 Early access to the first drop, plus updates on testing and release timing.
               </p>
             </div>
-            {/* <div className="text-sm text-slate-600">
-              Brand: <span className="font-medium">dark blue</span> +{" "}
-              <span className="font-medium">electric accent</span>
-            </div> */}
           </div>
 
-          {/* Frontend-only form (wire to your email service later) */}
-          <form className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <input
-              type="email"
-              required
-              placeholder="you@example.com"
-              className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:ring-2"
-              style={{ boxShadow: "0 0 0 0 rgba(47,107,255,0.0)" }}
-            />
-            <button
-              type="submit"
-              className="rounded-xl px-5 py-3 text-sm font-medium text-white"
-              style={{ background: BRAND.navy }}
-            >
-              Join waitlist
-            </button>
-          </form>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeygNcrM8Km34edMzkg8NQAe22ZMf8DPMlBmM492Dr6WznPzA/viewform?usp=header"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-block rounded-xl px-5 py-3 text-sm font-medium text-white"
+            style={{ background: BRAND.navy }}
+          >
+            Join waitlist
+          </a>
 
           <p className="mt-3 text-xs text-slate-500">No spam. Unsubscribe anytime.</p>
         </div>
@@ -568,6 +556,48 @@ function Waitlist() {
     </section>
   );
 }
+// function Waitlist() {
+//   return (
+//     <section id="waitlist" className="border-t border-slate-200 bg-white">
+//       <div className="mx-auto max-w-6xl px-4 py-14">
+//         <div className="rounded-3xl border border-slate-200 bg-white p-8 md:p-10">
+//           <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+//             <div>
+//               <h2 className="text-2xl font-semibold tracking-tight">Get launch updates</h2>
+//               <p className="mt-2 max-w-prose text-slate-600">
+//                 Early access to the first drop, plus updates on testing and release timing.
+//               </p>
+//             </div>
+//             {/* <div className="text-sm text-slate-600">
+//               Brand: <span className="font-medium">dark blue</span> +{" "}
+//               <span className="font-medium">electric accent</span>
+//             </div> */}
+//           </div>
+
+//           {/* Frontend-only form (wire to your email service later) */}
+//           <form className="mt-6 flex flex-col gap-3 sm:flex-row">
+//             <input
+//               type="email"
+//               required
+//               placeholder="you@example.com"
+//               className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:ring-2"
+//               style={{ boxShadow: "0 0 0 0 rgba(47,107,255,0.0)" }}
+//             />
+//             <button
+//               type="submit"
+//               className="rounded-xl px-5 py-3 text-sm font-medium text-white"
+//               style={{ background: BRAND.navy }}
+//             >
+//               Join waitlist
+//             </button>
+//           </form>
+
+//           <p className="mt-3 text-xs text-slate-500">No spam. Unsubscribe anytime.</p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 function Footer() {
   return (
@@ -644,52 +674,13 @@ function UseCaseCard(props: {
 
 function LogoMark() {
   return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 64 64"
-      aria-label="Surge logo"
-      role="img"
-      className="shrink-0"
-    >
-      <defs>
-        <linearGradient id="surgeGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor={BRAND.electric} stopOpacity="1" />
-          <stop offset="1" stopColor={BRAND.navy2} stopOpacity="1" />
-        </linearGradient>
-      </defs>
-
-      {/* Rounded square */}
-      <rect x="6" y="6" width="52" height="52" rx="16" fill={BRAND.navy} />
-
-      {/* Stylized S */}
-      <path
-        d="M41 18c-2.4-2.2-6-3.4-10-3.4-7 0-12 3.6-12 8.6 0 4.5 3.7 6.7 10.4 7.8 6.2 1 8.1 2.3 8.1 4.4 0 2.5-2.8 4.2-7 4.2-4.2 0-7.4-1.5-9.8-4.1"
-        fill="none"
-        stroke="url(#surgeGrad)"
-        strokeWidth="4.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      {/* Arrow element */}
-      <path
-        d="M43 42l8 0 0-8"
-        fill="none"
-        stroke={BRAND.electric}
-        strokeWidth="4.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M51 34c-6.5 6.8-12.6 10.8-21 12.3"
-        fill="none"
-        stroke={BRAND.electric}
-        strokeWidth="4.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    <img
+      src={`${BASE_PATH}/images/SurgeLogo.jpg`}
+      alt="Surge logo"
+      width={20}
+      height={20}
+      className="shrink-0 object-contain"
+    />
   );
 }
 
