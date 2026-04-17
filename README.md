@@ -54,6 +54,7 @@ Useful for prehab, movement prep, and intentional low-load strength work.
 
 ## Media
 
+<img width="734" height="385" alt="SurgeTorsoEdit2 0" src="https://github.com/user-attachments/assets/46e3a4da-2ff3-4003-a316-0b7acd035ed4" />
 
 
 <!-- ```md
