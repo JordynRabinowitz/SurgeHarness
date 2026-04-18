@@ -85,6 +85,7 @@ Surge Harness is an active capstone and venture prototype. Current work includes
 - **Tailwind CSS**
 - **Lucide React**
 - **GitHub Pages** for deployment
+- **R for data analysis**
 
 ### Design / Documentation
 
