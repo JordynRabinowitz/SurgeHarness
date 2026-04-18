@@ -178,6 +178,6 @@ This project is a prototype and should not be treated as medical advice. Users r
 
 ## Credits
 
-Created as part of an ATLAS / CU Boulder capstone project.
+Created as part of a 2026 ATLAS / CU Boulder capstone project.
 
 Special thanks to collaborators, testers, and community members who have helped shape the design through feedback and iteration.
