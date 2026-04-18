@@ -148,17 +148,17 @@ Visitors to the website can:
 
 This project grew out of capstone research into climbing injury, rehabilitation, movement control, and wearable resistance systems. It has also been shaped by precedent research, prototype testing, and feedback from users and domain experts in areas like climbing and rehabilitation.
 
-# Testing
+### Testing
 As part of the development process for Surge Harness we conducted three rounds of focus group testing and a final climbing meetup that was open to the public.
 
 We had a total of 7 participants consisting of three men and four women. There was a range of climbing experience with one beginner, one competitive climber, and five mid-level climbers. There was a range of shoulder mobility as well from a standard range of mobility to extremely hypermobile. There was also a range of history of shoulder injury from no shoulder injuries to multiple shoulder injuries.
 
 Since these observations are distributed across so few participants we will be looking at distributions. More data is required for statistical significance.
 
-# Aquiring the Data
+### Aquiring the Data
 The data is mainly self-reported and testing participants were free to choose the difficulty of climbs attempted as well as the strength of resistance used with the harness. Participants were also asked to attempt the same climbs with and without the harness. We had a total of 7 participants each doing 8-11 climbs for a total of 59 climbs. Each climb will be analyzed as a discrete data point. Climbs were rated on difficulty on a scale of 1-11 to normalize across different gyms rating systems. All climbs were completed at or below a difficulty of 8.
 
-# Data Distributions
+### Data Distributions
 <img width="600" alt="Figure1" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/5880fbcbae3b7efe75a3abaeaa1f7cf9fdace5ee/public/images/Figure1.png"/>
 <img width="600" alt="Figure2" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/5880fbcbae3b7efe75a3abaeaa1f7cf9fdace5ee/public/images/Figure2.png"/>
 <img width="600" alt="Figure3" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/5880fbcbae3b7efe75a3abaeaa1f7cf9fdace5ee/public/images/Figure3.png"/>
