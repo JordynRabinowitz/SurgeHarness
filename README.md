@@ -1,5 +1,5 @@
 # <img width="20" height="30" alt="WhiteSurgeLogo" src="https://github.com/user-attachments/assets/1a08640d-4039-4090-871b-b49827467df4"/>urge Harness
-# ![WhiteSurgeLogo]("https://github.com/user-attachments/assets/1a08640d-4039-4090-871b-b49827467df4.png")urge Harness
+# ![WhiteSurgeLogo]("https://github.com/user-attachments/assets/1a08640d-4039-4090-871b-b49827467df4")urge Harness
 **Strength you can feel. Control you can build.**
 
 Surge Harness is a wearable movement-resistance system designed to help climbers, athletes, and everyday users build strength and improve movement control safely. Instead of adding bulky external load, the system uses elastic resistance routed from the torso to the arms to gently slow motion, promote body awareness, and support mindful training and rehabilitation.
