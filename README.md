@@ -1,4 +1,5 @@
 # <img width="20" height="30" alt="WhiteSurgeLogo" src="https://github.com/user-attachments/assets/1a08640d-4039-4090-871b-b49827467df4"/>urge Harness
+# ![Capital S as a curvy arrow pointing diagonally upwards]("https://github.com/user-attachments/assets/1a08640d-4039-4090-871b-b49827467df4")urge Harness
 
 
 **Strength you can feel. Control you can build.**
