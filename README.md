@@ -159,8 +159,8 @@ Since these observations are distributed across so few participants we will be l
 The data is mainly self-reported and testing participants were free to choose the difficulty of climbs attempted as well as the strength of resistance used with the harness. Participants were also asked to attempt the same climbs with and without the harness. We had a total of 7 participants each doing 8-11 climbs for a total of 59 climbs. Each climb will be analyzed as a discrete data point. Climbs were rated on difficulty on a scale of 1-11 to normalize across different gyms rating systems. All climbs were completed at or below a difficulty of 8.
 
 ### Data Distributions
-<img width="300" alt="Figure1" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure1.png"/> <img width="300" alt="Figure2" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure2.png"/>
-<img width="300" alt="Figure3" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure3.png"/> <img width="300" alt="Figure4" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure4.png"/>
+<img width="300" alt="Figure1" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/81c1dace89f8c80c4085a0548be70c221a4502ea/public/images/Figure1.png"/> <img width="300" alt="Figure2" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure2.png"/>
+<img width="300" alt="Figure3" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/81c1dace89f8c80c4085a0548be70c221a4502ea/public/images/Figure3.png"/> <img width="300" alt="Figure4" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure4.png"/>
 <img width="300" alt="Figure5" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure5.png"/>
 
 ### Conclusions
