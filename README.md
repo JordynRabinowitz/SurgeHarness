@@ -161,7 +161,7 @@ The data is mainly self-reported and testing participants were free to choose th
 ### Data Distributions
 <img width="300" alt="Figure1" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/81c1dace89f8c80c4085a0548be70c221a4502ea/public/images/Figure1.png"/> <img width="300" alt="Figure2" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/f4505f067ce6d979308ac630de361f6c63e119d1/public/images/Figure2.png"/>
 <img width="300" alt="Figure3" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/81c1dace89f8c80c4085a0548be70c221a4502ea/public/images/Figure3.png"/> <img width="300" alt="Figure4" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/f4505f067ce6d979308ac630de361f6c63e119d1/public/images/Figure4.png"/>
-<img width="300" alt="Figure5" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure5.png"/>
+<img width="300" alt="Figure5" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/1920b37f8322d835c19021b74546ea6543c17c2a/public/images/Figure5.png"/> <img width="300" alt="Figure6" src="https://github.com/JordynRabinowitz/SurgeHarness/blob/ce7dd910b46d0e6a49cc70ec23cb8d12c07a16aa/public/images/Figure6.png"/>
 
 ### Conclusions
 From these distributions the average completed climb with the harness was marginally less difficult than without. The difference is minimal and the overall distributions are comparable. There does not seem to be any significant negative affect to using the Surge Harness for climbing. The data set is fairly limited so more testing is encouraged to draw more confident conclusions.
