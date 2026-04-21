@@ -100,52 +100,6 @@ Surge Harness is an active capstone and venture prototype. Current work includes
 - buckles and D-rings
 - sewn fabric components
 
-## Repository Structure
-
-```bash
-SurgeHarness/
-├── .github/workflows/
-├── app/
-├── public/
-├── README.md
-├── next.config.ts
-├── package.json
-└── tsconfig.json
-```
-
-## Installation
-
-To run the site locally:
-
-```bash
-git clone https://github.com/JordynRabinowitz/SurgeHarness.git
-cd SurgeHarness
-npm install
-npm run dev
-```
-
-Then open `http://localhost:3000` in your browser.
-
-## Build / Deployment
-
-This project is configured as a static Next.js export and deployed through GitHub Pages.
-
-```bash
-npm run build
-```
-
-The production configuration uses a GitHub Pages base path for this repository.
-
-## Usage
-
-Visitors to the website can:
-
-- learn what the Surge Harness is
-- explore use cases for climbing, rehab, posture, and training
-- view the product story and team
-- access project updates and documentation
-- join the waitlist for future launch updates
-
 ## Research and Design Background
 
 This project grew out of capstone research into climbing injury, rehabilitation, movement control, and wearable resistance systems. It has also been shaped by precedent research, prototype testing, and feedback from users and domain experts in areas like climbing and rehabilitation.
@@ -191,6 +145,52 @@ Planned next steps include:
 - developing movement guides and support resources
 - exploring accessories such as replacement band kits
 - continuing toward launch-ready documentation and branding
+
+## Repository Structure
+
+```bash
+SurgeHarness/
+├── .github/workflows/
+├── app/
+├── public/
+├── README.md
+├── next.config.ts
+├── package.json
+└── tsconfig.json
+```
+
+## Installation
+
+To run the site locally:
+
+```bash
+git clone https://github.com/JordynRabinowitz/SurgeHarness.git
+cd SurgeHarness
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000` in your browser.
+
+## Build / Deployment
+
+This project is configured as a static Next.js export and deployed through GitHub Pages.
+
+```bash
+npm run build
+```
+
+The production configuration uses a GitHub Pages base path for this repository.
+
+## Usage
+
+Visitors to the website can:
+
+- learn what the Surge Harness is
+- explore use cases for climbing, rehab, posture, and training
+- view the product story and team
+- access project updates and documentation
+- join the waitlist for future launch updates
 
 ## Notes
 
