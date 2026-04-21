@@ -10,7 +10,7 @@ Surge Harness is a wearable movement-resistance system designed to help climbers
 - **User Manual:** [Surge Harness User Manual](https://sway-river-90012031.figma.site/)
 - **Video Demonstration:** [Surge Harness Video](https://vimeo.com/1185279119?share=copy&fl=sv&fe=ci)
 - **Full Documentation:** [Capstone Development Timeline](https://docs.google.com/document/d/1Ow9AekOLRRCUhUxUgIQepOyi0AhpZZKI180Od1Nkrhk/edit?usp=sharing)
-- **Research** [Testing Report](https://github.com/JordynRabinowitz/SurgeHarness/blob/19d46e65c284ecadfd995877bbf52c7471555976/Documentation_no_code_here/TestingReport.pdf)
+- **Research:** [Testing Report](https://github.com/JordynRabinowitz/SurgeHarness/blob/19d46e65c284ecadfd995877bbf52c7471555976/Documentation_no_code_here/TestingReport.pdf)
 
 ## Project Overview
 
