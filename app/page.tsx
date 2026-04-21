@@ -602,92 +602,98 @@ function Waitlist() {
 //   );
 // }
 
-// function Footer() {
-//   return (
-//     <footer className="border-t border-slate-200 bg-white">
-//       <div className="mx-auto max-w-6xl px-4 py-10">
-//         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-//           <div>
-//             <div className="flex items-center gap-2">
-//               <LogoMark />
-//               <div className="text-sm font-semibold">Surge Harness</div>
-//             </div>
-//             <p className="mt-3 max-w-sm text-sm text-slate-600">
-//               Wearable movement resistance for mindful strength training and safer rebuilding.
-//             </p>
-//           </div>
-
-//           <div className="grid grid-cols-2 gap-6 text-sm md:grid-cols-3">
-//             <FooterCol title="Product">
-//               <a href="#product">System</a>
-//               <a href="#use-cases">Use cases</a>
-//               <a href="#waitlist">Launch</a>
-//             </FooterCol>
-//             <FooterCol title="Resources">
-//               <a href="#guides">Guides</a>
-//               <a href="#story">Story</a>
-//               <a href="#team">Team</a>
-//             </FooterCol>
-//             <FooterCol title="Contact">
-//               <a href="#waitlist">Email updates</a>
-//               <a href="#waitlist">Partnerships (soon)</a>
-//               <a href="#waitlist">Press (soon)</a>
-//             </FooterCol>
-//           </div>
-//         </div>
-
-//         <div className="mt-10 flex flex-col gap-2 border-t border-slate-200 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
-//           <span>© {new Date().getFullYear()} Surge Harness</span>
-//           <span>surgeharness.com</span>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// }
-
 function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="flex flex-col gap-10 md:flex-row md:justify-between">
-          <div className="max-w-sm">
-            <h3 className="text-lg font-semibold text-slate-900">Surge Harness</h3>
-            <p className="mt-3 text-sm text-slate-600">
+        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+          <div>
+            <div className="flex items-center gap-2">
+              <LogoMark />
+              <div className="text-sm font-semibold">Surge Harness</div>
+            </div>
+            <p className="mt-3 max-w-sm text-sm text-slate-600">
               Wearable movement resistance for mindful strength training and safer rebuilding.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 text-sm">
-            <FooterCol title="Explore">
-              <div className="flex flex-col gap-2">
-                <a href="#product">System</a>
-                <a href="#use-cases">Use cases</a>
-                <a href="#guides">Guides</a>
-                <a href="#story">Story</a>
-                <a href="#team">Team</a>
-              </div>
+          <div className="grid grid-cols-2 gap-6 text-sm md:grid-cols-3">
+            <FooterCol title="Product">
+              <a href="#product">System</a>
+              <a href="#use-cases">Use cases</a>
+              <a href="#waitlist">Launch</a>
             </FooterCol>
-
             <FooterCol title="Resources">
-              <div className="flex flex-col gap-2">
-                <a href={USER_MANUAL_URL} target="_blank" rel="noreferrer">
+              <a href={USER_MANUAL_URL} target="_blank" rel="noreferrer">
                   User manual
                 </a>
-                <a href="#waitlist">Email updates</a>
-                <a href="#waitlist">Partnerships (soon)</a>
-                <a href="#waitlist">Press (soon)</a>
-              </div>
+              {/* <a href="#guides">Guides</a> */}
+              <a href="#story">Story</a>
+              <a href="#team">Team</a>
+            </FooterCol>
+            <FooterCol title="Contact">
+              <a href="#waitlist">Email updates</a>
+              <a href="#waitlist">Partnerships (soon)</a>
+              <a href="#waitlist">Press (soon)</a>
             </FooterCol>
           </div>
         </div>
 
-        <div className="mt-10 text-sm text-slate-500">
-          © {new Date().getFullYear()} Surge Harness · surgeharness.com
+        <div className="mt-10 flex flex-col gap-2 border-t border-slate-200 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
+          <span>© {new Date().getFullYear()} Surge Harness</span>
+          <span>surgeharness.com</span>
         </div>
       </div>
     </footer>
   );
 }
+
+//ugly footer
+
+// function Footer() {
+//   return (
+//     <footer className="border-t border-slate-200 bg-white">
+//       <div className="mx-auto max-w-6xl px-4 py-10">
+//         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+//           <div className="max-w-sm">
+//             <h3 className="text-lg font-semibold text-slate-900">Surge Harness</h3>
+//             <p className="mt-3 text-sm text-slate-600">
+//               Wearable movement resistance for mindful strength training and safer rebuilding.
+//             </p>
+//           </div>
+          
+
+//           <div className="grid grid-cols-2 gap-8 text-sm">
+//             <FooterCol title="Explore">
+//               <div className="flex flex-col gap-2">
+//                 <a href="#product">System</a>
+//                 <a href="#use-cases">Use cases</a>
+//                 <a href="#guides">Guides</a>
+//                 <a href="#story">Story</a>
+//                 <a href="#team">Team</a>
+//               </div>
+//             </FooterCol>
+
+//             <FooterCol title="Resources">
+//               <div className="flex flex-col gap-2">
+//                 <a href={USER_MANUAL_URL} target="_blank" rel="noreferrer">
+//                   User manual
+//                 </a>
+//                 <a href="#waitlist">Email updates</a>
+//                 <a href="#waitlist">Partnerships (soon)</a>
+//                 <a href="#waitlist">Press (soon)</a>
+//               </div>
+//             </FooterCol>
+//           </div>
+//         </div>
+
+//         <div className="mt-10 text-sm text-slate-500">
+//           © {new Date().getFullYear()} Surge Harness · surgeharness.com
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
 
 /* -------------------- Small components -------------------- */
 
