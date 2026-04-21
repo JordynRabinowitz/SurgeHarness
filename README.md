@@ -8,8 +8,8 @@ Surge Harness is a wearable movement-resistance system designed to help climbers
 
 - **Live Site:** [Surge Harness Website](https://jordynrabinowitz.github.io/SurgeHarness/)
 - **User Manual:** [Surge Harness User Manual](https://sway-river-90012031.figma.site/)
-- **Video Demonstration** [Surge Harness Video](https://o365coloradoedu-my.sharepoint.com/:v:/g/personal/jora8609_colorado_edu/IQAmOEfObG5rRLzrwedxgOQhAROI4-Q68OfRh3XDvvATiG0?e=z8P03b&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D)
-- **Full Documentation** [Capstone Development Timeline](https://docs.google.com/document/d/1Ow9AekOLRRCUhUxUgIQepOyi0AhpZZKI180Od1Nkrhk/edit?usp=sharing)
+- **Video Demonstration:** [Surge Harness Video](https://o365coloradoedu-my.sharepoint.com/:v:/g/personal/jora8609_colorado_edu/IQAmOEfObG5rRLzrwedxgOQhAROI4-Q68OfRh3XDvvATiG0?e=z8P03b&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D)
+- **Full Documentation:** [Capstone Development Timeline](https://docs.google.com/document/d/1Ow9AekOLRRCUhUxUgIQepOyi0AhpZZKI180Od1Nkrhk/edit?usp=sharing)
 
 ## Project Overview
 
