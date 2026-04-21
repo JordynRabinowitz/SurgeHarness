@@ -10,6 +10,8 @@ const BRAND = {
 
 const BASE_PATH = process.env.NODE_ENV === "production" ? "/SurgeHarness" : "";
 
+const USER_MANUAL_URL = "https://sway-river-90012031.figma.site/";
+
 import Image from "next/image";
 
 export default function Page() {
@@ -312,6 +314,7 @@ function FeaturedCollections() {
               "Modular fit + tension",
               "Mindful movement focus",
             ]}
+            manualHref={USER_MANUAL_URL}
           />
           <ProductCard
             title="Replacement Band Kit"
@@ -599,43 +602,87 @@ function Waitlist() {
 //   );
 // }
 
+// function Footer() {
+//   return (
+//     <footer className="border-t border-slate-200 bg-white">
+//       <div className="mx-auto max-w-6xl px-4 py-10">
+//         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+//           <div>
+//             <div className="flex items-center gap-2">
+//               <LogoMark />
+//               <div className="text-sm font-semibold">Surge Harness</div>
+//             </div>
+//             <p className="mt-3 max-w-sm text-sm text-slate-600">
+//               Wearable movement resistance for mindful strength training and safer rebuilding.
+//             </p>
+//           </div>
+
+//           <div className="grid grid-cols-2 gap-6 text-sm md:grid-cols-3">
+//             <FooterCol title="Product">
+//               <a href="#product">System</a>
+//               <a href="#use-cases">Use cases</a>
+//               <a href="#waitlist">Launch</a>
+//             </FooterCol>
+//             <FooterCol title="Resources">
+//               <a href="#guides">Guides</a>
+//               <a href="#story">Story</a>
+//               <a href="#team">Team</a>
+//             </FooterCol>
+//             <FooterCol title="Contact">
+//               <a href="#waitlist">Email updates</a>
+//               <a href="#waitlist">Partnerships (soon)</a>
+//               <a href="#waitlist">Press (soon)</a>
+//             </FooterCol>
+//           </div>
+//         </div>
+
+//         <div className="mt-10 flex flex-col gap-2 border-t border-slate-200 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
+//           <span>© {new Date().getFullYear()} Surge Harness</span>
+//           <span>surgeharness.com</span>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
+
 function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-          <div>
-            <div className="flex items-center gap-2">
-              <LogoMark />
-              <div className="text-sm font-semibold">Surge Harness</div>
-            </div>
-            <p className="mt-3 max-w-sm text-sm text-slate-600">
+        <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+          <div className="max-w-sm">
+            <h3 className="text-lg font-semibold text-slate-900">Surge Harness</h3>
+            <p className="mt-3 text-sm text-slate-600">
               Wearable movement resistance for mindful strength training and safer rebuilding.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 text-sm md:grid-cols-3">
-            <FooterCol title="Product">
-              <a href="#product">System</a>
-              <a href="#use-cases">Use cases</a>
-              <a href="#waitlist">Launch</a>
+          <div className="grid grid-cols-2 gap-8 text-sm">
+            <FooterCol title="Explore">
+              <div className="flex flex-col gap-2">
+                <a href="#product">System</a>
+                <a href="#use-cases">Use cases</a>
+                <a href="#guides">Guides</a>
+                <a href="#story">Story</a>
+                <a href="#team">Team</a>
+              </div>
             </FooterCol>
+
             <FooterCol title="Resources">
-              <a href="#guides">Guides</a>
-              <a href="#story">Story</a>
-              <a href="#team">Team</a>
-            </FooterCol>
-            <FooterCol title="Contact">
-              <a href="#waitlist">Email updates</a>
-              <a href="#waitlist">Partnerships (soon)</a>
-              <a href="#waitlist">Press (soon)</a>
+              <div className="flex flex-col gap-2">
+                <a href={USER_MANUAL_URL} target="_blank" rel="noreferrer">
+                  User manual
+                </a>
+                <a href="#waitlist">Email updates</a>
+                <a href="#waitlist">Partnerships (soon)</a>
+                <a href="#waitlist">Press (soon)</a>
+              </div>
             </FooterCol>
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-slate-200 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
-          <span>© {new Date().getFullYear()} Surge Harness</span>
-          <span>surgeharness.com</span>
+        <div className="mt-10 text-sm text-slate-500">
+          © {new Date().getFullYear()} Surge Harness · surgeharness.com
         </div>
       </div>
     </footer>
@@ -785,6 +832,7 @@ function ProductCard(props: {
   badge: string;
   bullets: string[];
   image?: string;
+  manualHref?: string;
 }) {
   return (
     <div className="rounded-3xl border border-slate-200 bg-white p-6">
@@ -823,12 +871,33 @@ function ProductCard(props: {
         ))}
       </ul>
 
-      <a
+      {/* <a
         href="#waitlist"
         className="mt-6 inline-flex w-full items-center justify-center rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-50"
       >
         Notify me
-      </a>
+      </a> */}
+      <div className="flex flex-col items-start gap-3">
+        <a
+          href="#waitlist"
+          className="rounded-xl px-4 py-2 text-sm font-medium text-white"
+          style={{ background: BRAND.navy }}
+        >
+          Notify me
+        </a>
+
+        {props.manualHref && (
+          <a
+            href={props.manualHref}
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-medium underline underline-offset-4"
+            style={{ color: BRAND.electric }}
+          >
+            View user manual →
+          </a>
+        )}
+      </div>
     </div>
   );
 }
